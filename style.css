@@ -823,3 +823,266 @@ footer{
     margin-right: 20px;
 }
 /* Finish */
+/* Responsive  */
+/* --- Mobile & Tablet Responsive Fixes --- */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Global Reset: Remove fixed heights and widths */
+    main, .container, .Third-Page, .FP, .PP, .SP, .WP, footer {
+        height: auto !important;
+        padding-bottom: 50px;
+    }
+
+    /* 2. Navigation: Stack items or hide them */
+    nav {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    nav .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    nav .items {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 0;
+        justify-content: center;
+    }
+    .items a {
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    /* 3. Hero Section (Main) */
+    main {
+        flex-direction: column-reverse; /* Put image on top of text for mobile */
+    }
+    main .content, main .image, .content .CT, .image .pic {
+        width: 100% !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+    .CT h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .CT {
+        padding: 20px;
+        text-align: center;
+    }
+    .image .pic {
+        height: 300px !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /* 4. Expertise Cards (Second Page) */
+    .trainning-items {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+    }
+    .trainning-items .card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* 5. Third Page (Why Choose Us) */
+    .TP-main {
+        flex-direction: column;
+        width: 95%;
+    }
+    .TP-content, .TP-image {
+        width: 100%;
+    }
+    .TP-pic {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* 6. Selected Projects (Fourth Page) */
+    .FP-container {
+        width: 95%;
+    }
+    .FP-head {
+        flex-direction: column;
+        text-align: center;
+    }
+    .FP-btns {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .FP-Card-Items {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .FP-Card {
+        flex-basis: 100%;
+        height: 200px;
+    }
+
+    /* 7. Testimonials (Fifth Page) */
+    .PP-Card-Container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .PP-Item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* 8. Contact Form (Seven Page) */
+    .WP-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .WP-first {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .WP-second {
+        width: 100%;
+    }
+    .WP-Form {
+        width: 95%;
+    }
+    .WP-Form input, .read, textarea {
+        width: 90% !important;
+    }
+    .label2 {
+        padding-left: 0;
+        display: block;
+    }
+    .WP-Form button {
+        width: 95%;
+    }
+
+    /* 9. Footer */
+    .FO-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .FO-first {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/* Mobile Devies only */
+/* --- Mobile Specific Styles (Max-width 480px) --- */
+@media screen and (max-width: 480px) {
+
+    /* Reset widths and heights to prevent horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+
+    main, .container, .trainning-items, .Third-Page, .TP-main, .FP, .FP-container, .FP-Card-Items, .PP, .SP, .WP, .WP-container, footer {
+        width: 100% !important;
+        height: auto !important;
+        margin: 0 !important;
+        padding: 10px !important;
+        display: block !important; /* Forces vertical stacking */
+    }
+
+    /* 1. Navigation */
+    nav {
+        height: auto;
+        padding: 15px 0;
+    }
+    nav .logo {
+        margin: 0 auto 10px auto;
+    }
+    nav .items {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .items ul {
+        padding: 0;
+        text-align: center;
+    }
+    .items a {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    /* 2. Hero Section */
+    .CT {
+        width: 100% !important;
+        margin: 0 !important;
+        text-align: center;
+    }
+    .CT h1 {
+        font-size: 30px !important;
+        line-height: 1.2;
+    }
+    .image .pic {
+        width: 90% !important;
+        height: 250px !important;
+        margin: 20px auto !important;
+        background-size: cover;
+    }
+
+    /* 3. Cards & Grids (Expertise and Projects) */
+    .trainning-items .card, .FP-Card, .PP-Item {
+        width: 95% !important;
+        margin: 10px auto !important;
+        flex-basis: auto !important;
+    }
+    
+    .FP-btns {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .FP-btns button {
+        margin: 5px;
+        padding: 8px 15px;
+    }
+
+    /* 4. Contact Form Fixes */
+    .WP-first, .WP-second {
+        padding: 15px !important;
+    }
+    .WP-Form {
+        width: 100%;
+        padding: 10px;
+    }
+    .WP-Form input, .WP-Form textarea, .read {
+        width: 100% !important;
+        box-sizing: border-box; /* Ensures padding doesn't push width over 100% */
+    }
+    .label2 {
+        padding-left: 0 !important;
+        margin-top: 10px;
+        display: block;
+    }
+    .WP-Form button {
+        width: 100%;
+    }
+
+    /* 5. Footer */
+    .FO-container {
+        padding: 20px 0;
+    }
+    .FO-first {
+        width: 100% !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .FO-logo {
+        margin: 0 auto 10px auto;
+    }
+    .FO-last {
+        width: 100%;
+        justify-content: center;
+    }
+}
