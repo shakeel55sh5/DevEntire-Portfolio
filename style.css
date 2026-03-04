@@ -1,0 +1,825 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+nav{
+    height: 80px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav .logo{
+    height: 30px;
+    width: 130px;
+    /* border: 1px solid black; */
+    background-image: url("logo.png");
+    margin-left: 200px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+nav .items{
+    height: 80px;
+    width: 700px;
+    /* border: 1px solid black; */
+    background-color: rgba(45, 47, 48, 0.246);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 220px;
+    align-items: center;
+}
+.items li{
+    list-style: none;
+    display: inline;
+
+}
+.items a{
+    text-decoration: none;
+    padding-right: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.items a:hover{
+   font-size: larger;
+   background-color: rgba(128, 128, 128, 0.454);
+}
+main{
+    height: 800px;
+    width: auto;
+    /* border: 1px solid blue; */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+main .content{
+    height: 800px;
+    width: 1000px;
+    /* border: 1px solid white; */
+    background-color: rgb(0, 0, 0);
+}
+main .image{
+    height: 800px;
+    width: 1000px;
+    /* border: 1px solid red; */
+    background-color: rgb(0, 0, 0);
+    float: left;
+}
+/* Content */
+.content .CT{
+    height: 700px;
+    width: 500px;
+    /* border: 1px solid red; */
+    /* padding-left: 20px; */
+    margin-left: 220px;
+    margin-right: 20px;
+}
+.CT li{
+    list-style-type: circle;
+    color: greenyellow;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.CT h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.CT #Fh1{
+    color: white;
+}
+.CT #Sh1{
+    background: linear-gradient(rgb(216, 209, 209),rgb(107, 89, 89));
+    background-clip: text;
+    color: transparent;
+}
+.CT #Th1{
+    color: rgb(155, 255, 4);
+}
+.CT p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.706);
+    font-weight: bold;
+}
+.CT .btn1{
+    height: 50px;
+    width: 150px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: greenyellow;
+    border-radius: 20px;
+    /* margin-left: 60px; */
+    margin-top: 50px;
+}
+.CT .btn2{
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    /* margin-left: 60px; */
+    margin-top: 50px;
+}
+/* image */
+.image .pic{
+    height: 700px;
+    width: 700px;
+    /* border: 1px solid white; */
+    background-color: rgb(0, 0, 0);
+    background-image: url("pic.png");
+    box-shadow: 0 0 10px rgba(247, 240, 240, 0.9);
+    margin-left: 20px;
+}
+/* Second Page */
+.container{
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    /* border: 1px solid yellow; */
+    text-align: center;
+    padding: 5px 0px;
+    background-color: black;
+    
+}
+.container h6{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: greenyellow;
+    padding: 0px 0px;
+    font-weight: bold;
+}
+.container h1{
+    font-family: Arial;
+    color: white;
+    font-size: 50px;
+}
+.container p{
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+.trainning-items{
+    width: 1170px;
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.trainning-items .card{
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 10px 10px;
+    flex-basis: 30%;
+    /* border: 1px solid blue; */
+    margin: 10px 0px;
+    background-color: rgb(41, 36, 36);
+    border-radius: 10px;
+}
+.card h6{
+    display: block;
+    height: 40px;
+    width: 40px;
+    color: greenyellow;
+    background-color: rgb(56, 53, 53);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.card h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card p{
+    color: rgb(156, 169, 180);
+    font-size: 14px;
+}
+.card button{
+    background-color: rgb(23, 22, 22);
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.card:hover{
+    box-shadow: 0px 0px 10px 3px greenyellow;
+}
+.card:hover h4{
+    color: greenyellow;
+    font-weight: bold;
+}
+.card:hover h6{
+    display: block;
+    height: 50px;
+    width: 50px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: greenyellow;
+}
+/* Third Page */
+.Third-Page{
+    height: 700px;
+    width: auto;
+    /* border: 1px solid white; */
+    background-color: rgb(0, 0, 0);
+    
+}
+.TP-main{
+    height: 600px;
+    width: 80%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid white; */
+    margin: auto;
+    position: relative;
+    display: flex;
+    /* margin-top: 20px; */
+    padding-left: 20px;
+}
+.TP-content{
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
+}
+.TP-content h6{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: greenyellow;
+    padding: 0px 0px;
+    font-weight: bold;
+}
+.TP-content h1{
+    font-family: Arial;
+    color: white;
+    font-size: 50px;
+}
+.TP-content p{
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    word-spacing: 9px;
+}
+.TP-image{
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+}
+.FD-main{
+    width: 80%;
+    height: 50px;
+    /* border: 1px solid white; */
+    display: flex;
+    margin-top: 20px;
+}
+.FD-logo{
+    width: 10%;
+    /* border: 2px solid red; */
+    background-color: rgb(56, 53, 53);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+.FD-logo a{
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: bold;
+}
+.FD-content{
+    float: left;
+    padding-left: 10px;
+}
+.FD-content h4{
+    display: inline;
+    margin: 0px;
+    color: white;
+    font-family:  sans-serif;
+    font-weight: bold;
+}
+.FD-content p{
+    /* display: inline; */
+    margin: 0px;
+    color: rgba(142, 139, 139, 0.624);
+    word-spacing: normal;
+}
+.TP-pic{
+    height: 400px;
+    width: 580px;
+    background: url("TP-pic.png");
+    margin: auto;
+    box-shadow: 0px 0px 10px 4px gray;   
+}
+/* Fourth Page */
+.FP{
+    height: 1000px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    margin-top: -50px;
+    
+}
+.FP-container{
+    height: 800px;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
+    margin: auto;
+}
+.FP-head{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.FP-btns{
+    height: 50px;
+    width: 600px;
+    /* border: 1px solid blue; */
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.FP-Card-Items{
+    width: 1170px;
+    height: 600px;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.FP-Card{
+    font-family: sans-serif;
+    text-align: left;
+    padding: 10px 10px;
+    flex-basis: 30%;
+    /* border: 1px solid blue; */
+    margin: 10px 0px;
+    background-color: rgb(41, 36, 36);
+    border-radius: 10px;
+    background-image: url("pic.png");
+    
+}
+.FP-Card:hover{
+    background-size: contain;
+    box-shadow: 0px 0px 10px 1px greenyellow;
+}
+.FP-Card h3,.FP-Card h6{
+    color: white;
+    position: relative;
+    top: 150px;
+    font-weight: bold;
+}
+.FP-container h6{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: greenyellow;
+    padding: 0px 0px;
+    font-weight: bold;
+}
+.FP-head h1{
+    font-family: Arial;
+    color: white;
+    font-size: 50px;
+}
+.FP-head button{
+    background-color: rgb(23, 22, 22);
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 40px;
+    margin: 35px 10px;
+}
+.FP-btns button{
+    background-color: rgb(23, 22, 22);
+    color: white;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.FP-head button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.FP-btns #sel{
+    background-color: greenyellow;
+    color: black;
+}
+/* Fifth Page */
+.PP{
+    height: 500px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    margin-top: -30px;
+}
+.PP-main{
+    height: 95%;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.PP-Card-Container{
+    height: 300px;
+    width: 80%;
+    background-color: rgb(6, 7, 7);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    text-align: justify;
+}
+.PP-Item{
+    height: 250px;
+    width: 30%;
+    background-color: rgb(41, 36, 36);
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.PP-Pic-one{
+    height: 61px;
+    width: 180px;
+    background: url("PP-pic-one.png");
+}
+.PP-Pic-two{
+    height: 61px;
+    width: 180px;
+    background: url("PP-pic-two.png");
+}
+.PP-Pic-three{
+    height: 61px;
+    width: 180px;
+    background: url("PP-pic-three.png");
+}
+.PP-main h6{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: greenyellow;
+    padding: 0px 0px;
+    font-weight: bold;
+}
+.PP-main h1{
+    font-family: Arial;
+    color: white;
+    font-size: 50px;
+}
+.PP-Item button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: greenyellow;
+    position: relative;
+    top: -20px;
+    left: -15px;
+    font-size: 50px;
+    font-weight: bold;
+}.PP-Item p{
+    color: rgba(255, 255, 255, 0.479);
+    font-family: Arial, sans-serif;
+}
+/* Six Page */
+.SP{
+    height: 550px;
+    width: auto;
+    background-color: rgba(22, 24, 23, 0.951);
+    /* border: 1px solid blue; */
+    /* margin-top: -40px; */
+    display: flex;
+}
+.SP-main{
+    height: 350px;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    margin: auto;
+    /* margin-top: 50px; */
+    text-align: center;
+    border-radius: 20px;
+}
+.SP-main h1{
+    font-family: Arial;
+    color: white;
+    font-size: 50px;
+}
+.SP-main p{
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.SP-main .btn1{
+    height: 50px;
+    width: 200px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: greenyellow;
+    border-radius: 20px;
+    /* margin-left: 60px; */
+    margin-top: 50px;
+}
+.SP-main .btn2{
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    /* margin-left: 60px; */
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 0.5px aliceblue;
+}
+/* Seven Page */
+.WP{
+    height: 700px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+.WP-container{
+    height: 600px;
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+.WP-first{
+    height: 100%;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid blue; */
+    padding: 0px 20px;
+    padding-left: 250px;
+}
+.WP-second{
+    height: 100%;
+    width: 40%;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid white; */
+}
+.first-contacts{
+    display: flex;
+    /* background-color: rgb(28, 21, 21); */
+    width: 400px;
+    padding: 0px 20px;
+    justify-content: justify;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.F-logo{
+    width: 40px;
+    height: 30px;
+    /* border: 2px solid red; */
+    background-color: rgb(80, 77, 77);
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+}
+.F-logo a{
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: bold;
+}
+.first-contacts p{
+    padding-left: 20px;
+}
+.first-links{
+    height: 50px;
+    width: 300px;
+    /* background-color: white; */
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.first-links li{
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    list-style: none;
+    background-color: rgba(80, 76, 76, 0.694);
+    box-shadow: 0px 0px 10px 1px gray;
+    border: none;
+}
+.first-links li:hover{
+    box-shadow: 0px 0px 10px 3px rgb(147, 143, 143);
+}
+.first-links a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.WP-first h1{
+    font-family: Arial;
+    color: white;
+    font-size: 50px;
+}
+.WP-first h6{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: greenyellow;
+    padding: 0px 0px;
+    font-weight: bold;
+}
+.WP-first p{
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.first-contacts p{
+    color: aliceblue;
+}
+/* WP-second */
+.WP-Form{
+    height: 80%;
+    width: 90%;
+    background-color: rgb(59, 54, 54);
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-basis: wrap;
+    flex-direction: 50%;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+form{
+    margin-top: 20px;
+}
+label{
+    /* padding-left: 30px; */
+    color: rgba(162, 155, 155, 0.883);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.label2{
+    padding-left: 230px;
+}
+input{
+    height: 30px;
+    width: 230px;
+    text-align: justify;
+    padding-left: 12px;
+    color: rgba(138, 132, 132, 0.796);
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+}
+.read{
+    width: 480px;
+    color: rgba(255, 255, 255, 0.879);
+    font-weight: 600;
+}
+textarea{
+    padding-left: 12px;
+    color: rgba(138, 132, 132, 0.796);
+    background-color: rgb(0, 0, 0);
+    border-radius: 7px;
+}
+.WP-Form button{
+    height: 50px;
+    width: 510px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+/* last part */
+footer{
+    height: 700px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid red; */
+    margin-top: -20px;
+}
+.FO-container{
+    height: 70%;
+    width: 90%;
+    /* border: 1px solid yellow; */
+    background-color: rgb(45, 42, 42);
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    flex-wrap: wrap;
+    flex-direction: 23%;
+}
+.FO-first{
+    height: 60%;
+    width: 400px;
+    background-color: rgba(45, 42, 42, 0.267);
+    /* border: 1px solid red; */
+}
+.FO-last{
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 60px;
+}
+.FO-logo{
+    height: 30px;
+    width: 130px;
+    /* border: 1px solid black; */
+    background-image: url("logo.png");
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.FO-first p{
+    padding-left: 10px;
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.FO-links{
+    display: block;
+}
+.FO-links a{
+    display: block;
+    justify-content: center;
+    text-align: justify;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(192, 192, 192);
+}
+.FO-first h2{
+    padding-left: 10px;
+    font-family: Arial;
+    color: white;
+}
+.FO-first input{
+    width: 250px;
+    margin-left: 10px;
+}
+.FO-first button{
+    border: none;
+    margin: 10px 0px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: greenyellow;
+    color: black;
+    width: 20px;
+}
+.FO-container h4{
+    padding-left: 10px;
+    color: rgb(192, 192, 192);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.FO-last li{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(113, 102, 102);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+/* Finish */
